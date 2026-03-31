@@ -25,7 +25,8 @@ namespace BCVP.NET8.Controllers
         {
             var userService = new UserService();
             var userList = await userService.Query();
-            DateTime dateTime = DateTime.Now;//01
+            DateTime dateTime = DateTime.Now;//02
+            System.Console.Write(dateTime);//03
             return userList;
         }
     }
